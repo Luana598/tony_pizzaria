@@ -1,4 +1,10 @@
+:root{
+    --primary-color: #f07807;
+    --secundary-color: #f7e5d8;
+}
+
 *{
+
    padding: 0;
    margin: 0;
    box-sizing: 0;
@@ -15,14 +21,52 @@ ul,ol,li{
 
 body{
 padding: 0 80px;
+font-family: "Poppins", sans-serif;
+background-color: var(--secundary-color);
+
 }
 
 header{
     position: fixed;
-    background-color: tomato;
     height: 60px;
     width: calc(100% - 160px);
     top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    font-size: 1rem;
+    
+}
+
+header li{
+    padding: 4px 8px;
+    transition: .5s;
+}
+
+header li:hover{
+    background-color: var(--secundary-color) ;
+    box-shadow: 0 6px 8px #0005;
+}
+
+.login{
+    height: 48px;
+    width: 120px;;
+    border-radius: 12px;
+    background-color: #fbddc1;
+    border: none;
+    background-color: var(--secundary-color) ;
+    box-shadow: 0 4px 8px #0008;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 main{
